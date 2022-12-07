@@ -1,0 +1,1 @@
+INSERT INTO Persons(Lastname, FirstName, Age, Job) VALUES ("Williams", "Max", 27, "Mechanic");
