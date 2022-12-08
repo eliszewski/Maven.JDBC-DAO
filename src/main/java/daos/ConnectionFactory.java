@@ -12,9 +12,9 @@ import java.sql.SQLException;
  */
 public class ConnectionFactory {
 
-    public static final String URL = "jdbc:mysql://localhost:3306/test";
-    public static final String USER = "eryk";
-    public static final String PASS = "ss995";
+    public static final String URL = Login.getUrl();
+    public static final String USER = Login.getUsername();
+    public static final String PASS = Login.getPassword();
 
     /**
      * Get a connection to database
@@ -34,8 +34,10 @@ public class ConnectionFactory {
      * Test Connection
      */
     public static void main(String[] args) {
-        //Connection connection = daos.ConnectionFactory.getConnection();
-        System.out.println(USER);
+        Connection connection = daos.ConnectionFactory.getConnection();
+        PersonDao dao = new PersonDao();
+        System.out.println(dao.findById(1));
+        System.out.println(dao.findAll());
     }
 
 }

@@ -65,4 +65,15 @@ public class Person implements PersonInterface {
     public void setJob(String job) {
         this.job = job;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", age=" + age +
+                ", job='" + job + '\'' +
+                '}';
+    }
 }

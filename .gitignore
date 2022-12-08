@@ -81,4 +81,8 @@ fabric.properties
 # Sonarlint plugin
 .idea/sonarlint
 
+#login
+src/main/java/daos/Login.java
+
 # End of https://www.gitignore.io/api/intellij
+
