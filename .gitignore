@@ -9,6 +9,9 @@
 #login
 Login.java
 
+#Target
+target
+
 # User-specific stuff
 .idea/**/workspace.xml
 .idea/**/tasks.xml
