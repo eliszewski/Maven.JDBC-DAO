@@ -1,6 +1,8 @@
 package daos;
 
 import com.mysql.jdbc.Driver;
+import models.Person;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -36,8 +38,12 @@ public class ConnectionFactory {
     public static void main(String[] args) {
         Connection connection = daos.ConnectionFactory.getConnection();
         PersonDao dao = new PersonDao();
+        //dao.create(new Person("Oliver","Kane", 34,"Dentist"));
+        //dao.update(new Person("Olly","Kane", 55,"Dentist"),6);
+        //dao.delete(6);
         System.out.println(dao.findById(1));
         System.out.println(dao.findAll());
+
     }
 
 }

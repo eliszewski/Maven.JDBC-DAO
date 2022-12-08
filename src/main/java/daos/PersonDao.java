@@ -69,7 +69,7 @@ public class PersonDao implements PersonDaoInterface{
             ps.setString(2, dto.getLastName());
             ps.setInt(3,dto.getAge());
             ps.setString(4, dto.getJob());
-            ps.setInt(5,dto.getId());
+            ps.setInt(5,id);
             int i = ps.executeUpdate();
             if(i == 1) {
                 return true;
